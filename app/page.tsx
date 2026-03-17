@@ -32,13 +32,13 @@ export default function VideoProductionWebsite() {
         navPipeline: "Процесс",
         navTeam: "Команда",
         navContact: "Контакты",
-        topCta: "Обсудить съёмку",
+        topCta: "Связаться",
         badge: "Moscow Creative Agency",
         hero1: "КОНТЕНТ",
         hero2: "О КОТОРОМ",
         hero3: "ХОЧЕТСЯ КРИЧАТЬ",
         heroText:
-          "Мы снимаем fashion films, кампейны, музыкальные видео и рекламу. Любим проекты, где у кадра есть чувство веса: когда ткань, движение, лицо, свет и пространство работают не по отдельности, а собираются в один живой образ.",
+          "Мы создаём фильмы о брендах, рекламные кампании, музыкальные видео и имиджевый контент, которые работают на результат. Нас привлекают проекты с характером и визуальным весом, где каждый элемент кадра имеет значение.",
         heroPrimary: "Открыть портфолио",
         heroSecondary: "Как мы работаем",
         heroCardKicker: "Фокус",
@@ -108,13 +108,13 @@ export default function VideoProductionWebsite() {
         navPipeline: "Process",
         navTeam: "Team",
         navContact: "Contact",
-        topCta: "Discuss the shoot",
+        topCta: "Contact us",
         badge: "Moscow Creative Agency",
         hero1: "CONTENT",
         hero2: "YOU WANT",
         hero3: "TO SHOUT ABOUT",
         heroText:
-          "We shoot fashion films, campaign videos, music visuals, and commercials. We are drawn to projects where the frame has weight — where fabric, movement, face, light, and space come together as one living image.",
+          "We create brand films, advertising campaigns, music videos, and image content that work for results. We are drawn to projects with character and visual weight, where every element inside the frame matters.",
         heroPrimary: "Open portfolio",
         heroSecondary: "How we work",
         heroCardKicker: "Focus",
@@ -474,19 +474,19 @@ export default function VideoProductionWebsite() {
             <p className="max-w-2xl text-base leading-7 text-[#b8b8b9] md:text-[1.05rem]">{t.heroText}</p>
 
             <div className="flex flex-wrap gap-4">
+              <a
+                href="#contact"
+                className="rounded-full bg-[#c31432] px-6 py-3 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#d91a3b]"
+              >
+                Связаться
+              </a>
               <button
                 type="button"
                 onClick={() => setView("portfolio")}
-                className="rounded-full bg-[#c31432] px-6 py-3 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#d91a3b]"
-              >
-                {t.heroPrimary}
-              </button>
-              <a
-                href="#pipeline"
                 className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-[#ededed] transition hover:border-white hover:bg-white hover:text-black"
               >
-                {t.heroSecondary}
-              </a>
+                Открыть портфолио
+              </button>
             </div>
           </div>
 
@@ -633,9 +633,9 @@ export default function VideoProductionWebsite() {
         <div className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           <button type="button" onClick={() => setView("home")} className="flex items-center gap-3 text-left">
             <img
-              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfcAAABSCAYAAADm3++WAAAACXBIWXMAAAsSAAALEgHS3X78AAAgAElEQVR4nO2de5AcVZn/P6eq7jEzmyGQhL0IFl5AGEBFBQEXABdABdQdbio4IlBBUcCHoovgR4VXxU1xZQQHJ4Irvip4UQSEyIuL4AKu7oJREHABBBEsA5JAgCEJs9m92d09Vf39M6fPe+7dJzPZJJvk/TzPPJmqqr569epT53d/53f+lyAiAiK9CtMdgIiIqJxg4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kREREQeY+JEREREHmPiRERERB5j4kRERET+S2xvtH5Jb86+AAAAAElFTkSuQmCC"
+              src="/frmwrk-logo.png"
               alt="FRMWRK"
-              className="h-9 w-auto md:h-11"
+              className="h-10 w-auto md:h-14"
             />
           </button>
 

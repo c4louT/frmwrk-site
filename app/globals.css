@@ -1,55 +1,47 @@
-@import "tailwindcss";
+import type { Metadata } from "next";
+import localFont from "next/font/local";
+import "./globals.css";
 
-@font-face {
-  font-family: "Find Sans Pro";
-  src: url("/fonts/FindSansPro-Light.ttf") format("truetype");
-  font-weight: 300;
-  font-style: normal;
-  font-display: swap;
-}
+const findSansPro = localFont({
+  src: [
+    {
+      path: "../public/fonts/FindSansPro-Light.ttf",
+      weight: "300",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/FindSansPro-Regular.ttf",
+      weight: "400",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/FindSansPro-Medium.ttf",
+      weight: "500",
+      style: "normal",
+    },
+    {
+      path: "../public/fonts/FindSansPro-Bold.ttf",
+      weight: "700",
+      style: "normal",
+    },
+  ],
+  variable: "--font-find-sans-pro",
+  display: "swap",
+});
 
-@font-face {
-  font-family: "Find Sans Pro";
-  src: url("/fonts/FindSansPro-Regular.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
+export const metadata: Metadata = {
+  title: "FRMWRK",
+  description: "FRMWRK — Moscow Creative Agency",
+};
 
-@font-face {
-  font-family: "Find Sans Pro";
-  src: url("/fonts/FindSansPro-Medium.ttf") format("truetype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Find Sans Pro";
-  src: url("/fonts/FindSansPro-Bold.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: "Find Sans Pro", Arial, Helvetica, sans-serif;
-  --font-mono: monospace;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: "Find Sans Pro", Arial, Helvetica, sans-serif;
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  return (
+    <html lang="ru">
+      <body className={findSansPro.variable}>{children}</body>
+    </html>
+  );
 }
