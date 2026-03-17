@@ -491,17 +491,20 @@ export default function VideoProductionWebsite() {
           </div>
 
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl shadow-black/50">
-            <img
-              src={categoryCards[0].image}
-              alt="FRMWRK hero"
-              className="h-[68vh] min-h-[420px] w-full object-cover object-center lg:h-[72vh]"
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
-            <div className="absolute bottom-0 left-0 right-0 p-6">
-              <div className="text-xs uppercase tracking-[0.35em] text-[#d0d0d0]/80">{t.heroCardKicker}</div>
-              <div className="mt-2 text-2xl font-semibold text-white">{t.heroCardTitle}</div>
-            </div>
-          </div>
+  <video
+    src="/media/stairs.mp4"
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="h-[68vh] min-h-[420px] w-full object-cover object-center lg:h-[72vh]"
+  />
+  <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/20 to-transparent" />
+  <div className="absolute bottom-0 left-0 right-0 p-6">
+    <div className="text-xs uppercase tracking-[0.35em] text-[#d0d0d0]/80">{t.heroCardKicker}</div>
+    <div className="mt-2 text-2xl font-semibold text-white">{t.heroCardTitle}</div>
+  </div>
+</div>
         </div>
       </section>
 
@@ -510,7 +513,11 @@ export default function VideoProductionWebsite() {
       <section className="mx-auto max-w-7xl px-6 py-8 lg:px-8 lg:py-12">
         <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
           <div className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03]">
-            <img src={categoryCards[0].image} alt="FRMWRK atmosphere" className="h-full min-h-[360px] w-full object-cover" />
+          <img
+  src="/media/drummer.jpg"
+  alt="FRMWRK atmosphere"
+  className="h-full min-h-[360px] w-full object-cover"
+/>
           </div>
 
           <div className="rounded-[2rem] border border-white/10 bg-white/[0.03] p-8 lg:p-10">
@@ -536,21 +543,32 @@ export default function VideoProductionWebsite() {
         </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
-          {[
-            { title: t.pipe1, text: t.pipe1Text, image: categoryCards[0].image },
-            { title: t.pipe2, text: t.pipe2Text, image: categoryCards[1].image },
-            { title: t.pipe3, text: t.pipe3Text, image: categoryCards[2].image },
-          ].map((item, index) => (
+        {[
+  { title: t.pipe1, text: t.pipe1Text, image: "/media/drummer.jpg" },
+  { title: t.pipe2, text: t.pipe2Text, image: categoryCards[1].image },
+  { title: t.pipe3, text: t.pipe3Text, image: categoryCards[2].image },
+].map((item, index) => (
             <div
               key={item.title}
               className="overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] transition hover:border-[#c31432]/40"
             >
               <div className="relative">
-                <img src={item.image} alt={item.title} className="aspect-[5/4] w-full object-cover" />
-                <div className="absolute left-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-[#c31432] text-sm font-semibold text-white">
-                  0{index + 1}
-                </div>
-              </div>
+  {index === 0 ? (
+    <video
+      src="/media/olovo.mp4"
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="aspect-[5/4] w-full object-cover"
+    />
+  ) : (
+    <img src={item.image} alt={item.title} className="aspect-[5/4] w-full object-cover" />
+  )}
+  <div className="absolute left-4 top-4 grid h-10 w-10 place-items-center rounded-full bg-[#c31432] text-sm font-semibold text-white">
+    0{index + 1}
+  </div>
+</div>
               <div className="p-6">
                 <h3 className="text-2xl font-semibold text-white">{item.title}</h3>
                 <p className="mt-4 text-sm leading-6 text-[#b8b8b9]">{item.text}</p>
