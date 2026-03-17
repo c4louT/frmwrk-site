@@ -1,47 +1,23 @@
-import type { Metadata } from "next";
-import localFont from "next/font/local";
-import "./globals.css";
+@import "tailwindcss";
 
-const findSansPro = localFont({
-  src: [
-    {
-      path: "../public/fonts/FindSansPro-Light.ttf",
-      weight: "300",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/FindSansPro-Regular.ttf",
-      weight: "400",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/FindSansPro-Medium.ttf",
-      weight: "500",
-      style: "normal",
-    },
-    {
-      path: "../public/fonts/FindSansPro-Bold.ttf",
-      weight: "700",
-      style: "normal",
-    },
-  ],
-  variable: "--font-find-sans-pro",
-  display: "swap",
-});
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
 
-export const metadata: Metadata = {
-  title: "FRMWRK",
-  description: "FRMWRK — Moscow Creative Agency",
-};
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-find-sans-pro), Arial, Helvetica, sans-serif;
+  --font-mono: monospace;
+}
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="ru">
-      <body className={findSansPro.variable}>{children}</body>
-    </html>
-  );
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-find-sans-pro), Arial, Helvetica, sans-serif;
 }
