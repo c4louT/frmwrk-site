@@ -35,8 +35,9 @@ export default function VideoProductionWebsite() {
         topCta: "Связаться",
         badge: "Moscow Creative Agency",
         hero1: "КОНТЕНТ",
-        hero2: "О КОТОРОМ",
-        hero3: "ХОЧЕТСЯ КРИЧАТЬ",
+hero2: "О КОТОРОМ",
+hero3: "ХОЧЕТСЯ",
+hero4: "КРИЧАТЬ",
         heroText:
           "Мы создаём фильмы о брендах, рекламные кампании, музыкальные видео и имиджевый контент, которые работают на результат. Нас привлекают проекты с характером и визуальным весом, где каждый элемент кадра имеет значение.",
         heroPrimary: "Открыть портфолио",
@@ -50,7 +51,7 @@ export default function VideoProductionWebsite() {
         aboutKicker: "О FRMWRK",
         aboutTitle: "Нам важно, как кадр чувствуется",
         aboutP1:
-          "Нас собирает общий вкус к изображению и внимательность к деталям. Нам интересно, как работает ритм, как двигается тело в кадре, как свет садится на ткань, как пространство начинает звучать вместе с человеком.",
+        "Нас собирает общий вкус к изображению и внимательность к деталям. Нам интересно, как работает ритм, как двигается тело в кадре, как свет садится на ткань, как пространство начинает звучать вместе с человеком. Поэтому нам особенно близки fashion-съёмки, music x fashion-проекты, кампейны и короткая форма, где стиль не приклеивают сверху, а находят внутри самого материала.",
         aboutP2:
           "Поэтому нам особенно близки fashion-съёмки, music x fashion-проекты, кампейны и короткая форма, где стиль не приклеивают сверху, а находят внутри самого материала.",
         pipelineKicker: "Процесс",
@@ -112,7 +113,8 @@ export default function VideoProductionWebsite() {
         badge: "Moscow Creative Agency",
         hero1: "CONTENT",
         hero2: "YOU WANT",
-        hero3: "TO SHOUT ABOUT",
+        hero3: "TO",
+        hero4: "SHOUT ABOUT",
         heroText:
           "We create brand films, advertising campaigns, music videos, and image content that work for results. We are drawn to projects with character and visual weight, where every element inside the frame matters.",
         heroPrimary: "Open portfolio",
@@ -460,16 +462,19 @@ export default function VideoProductionWebsite() {
             </div>
 
             <div className="space-y-1">
-              <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#f3f3f3] md:text-7xl lg:text-[6rem]">
-                {t.hero1}
-              </div>
-              <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#c31432] md:text-7xl lg:text-[6rem]">
-                {t.hero2}
-              </div>
-              <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#cececf] md:text-7xl lg:text-[6rem]">
-                {t.hero3}
-              </div>
-            </div>
+  <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#f3f3f3] md:text-7xl lg:text-[6rem]">
+    {t.hero1}
+  </div>
+  <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#cececf] md:text-7xl lg:text-[6rem]">
+    {t.hero2}
+  </div>
+  <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#cececf] md:text-7xl lg:text-[6rem]">
+    {t.hero3}
+  </div>
+  <div className="text-5xl font-black leading-none tracking-[-0.04em] text-[#c31432] md:text-7xl lg:text-[6rem]">
+    {t.hero4}
+  </div>
+</div>
 
             <p className="max-w-2xl text-base leading-7 text-[#b8b8b9] md:text-[1.05rem]">{t.heroText}</p>
 
@@ -532,15 +537,21 @@ export default function VideoProductionWebsite() {
       </section>
 
       <section id="pipeline" className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
-        <div className="mb-12 flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
-          <div>
-            <div className="text-sm uppercase tracking-[0.35em] text-[#9c9c9d]">{t.pipelineKicker}</div>
-            <h2 className="mt-3 text-3xl font-semibold tracking-[-0.03em] text-[#f1f1f1] md:text-5xl">
-              {t.pipelineTitle}
-            </h2>
-          </div>
-          <p className="max-w-xl text-sm leading-6 text-[#aaaaab] md:text-base">{t.pipelineText}</p>
-        </div>
+  <div className="mb-12">
+    <div className="text-sm uppercase tracking-[0.35em] text-[#9c9c9d]">{t.pipelineKicker}</div>
+
+    <div className="mt-3 grid gap-6 lg:grid-cols-3 lg:items-start">
+      <div className="lg:col-span-2">
+        <h2 className="text-3xl font-semibold tracking-[-0.03em] text-[#f1f1f1] md:text-5xl">
+          {t.pipelineTitle}
+        </h2>
+      </div>
+
+      <p className="text-sm leading-6 text-[#aaaaab] md:text-base">
+        {t.pipelineText}
+      </p>
+    </div>
+  </div>
 
         <div className="grid gap-6 lg:grid-cols-3">
         {[
@@ -610,7 +621,7 @@ export default function VideoProductionWebsite() {
 
       <section id="contact" className="mx-auto max-w-7xl px-6 py-16 lg:px-8 lg:py-24">
         <div className="rounded-[2rem] border border-white/10 bg-[linear-gradient(135deg,rgba(195,20,50,0.16),rgba(255,255,255,0.03))] p-8 lg:p-12">
-          <div className="grid gap-8 lg:grid-cols-[0.95fr_1.05fr]">
+        <div className="grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div>
               <div className="text-sm uppercase tracking-[0.35em] text-[#b5b5b6]">{t.contactKicker}</div>
               <h2 className="mt-4 max-w-2xl text-3xl font-semibold tracking-[-0.03em] text-white md:text-5xl">
@@ -622,20 +633,39 @@ export default function VideoProductionWebsite() {
               <p className="max-w-xl text-base leading-7 text-[#d4d4d4]">{t.contactText}</p>
               <p className="max-w-xl text-sm leading-6 text-[#b8b8b9]">{t.contactNote}</p>
 
-              <div className="grid gap-4 sm:grid-cols-3">
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#9c9c9d]">Email</div>
-                  <div className="mt-2 text-sm text-white">FRMWRK@yandex.com</div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#9c9c9d]">Phone</div>
-                  <div className="mt-2 text-sm text-white">8 (912) 704-14-50</div>
-                </div>
-                <div className="rounded-2xl border border-white/10 bg-black/20 p-4">
-                  <div className="text-[11px] uppercase tracking-[0.28em] text-[#9c9c9d]">Telegram</div>
-                  <div className="mt-2 text-sm text-white">@Wladimir_Art</div>
-                </div>
-              </div>
+              <div className="grid gap-4 sm:grid-cols-3 items-stretch">
+  <div className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-black/20 p-4">
+    <div className="text-[11px] uppercase tracking-[0.28em] text-[#9c9c9d]">Email</div>
+    <a
+      href="mailto:FRMWRK@yandex.com"
+      className="mt-2 break-all text-sm text-white transition hover:text-[#ff6b81]"
+    >
+      FRMWRK@yandex.com
+    </a>
+  </div>
+
+  <div className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-black/20 p-4">
+    <div className="text-[11px] uppercase tracking-[0.28em] text-[#9c9c9d]">Phone</div>
+    <a
+      href="tel:+79620744777"
+      className="mt-2 text-sm text-white transition hover:text-[#ff6b81]"
+    >
+      +7 962 074 4777
+    </a>
+  </div>
+
+  <div className="flex h-full flex-col justify-between rounded-2xl border border-white/10 bg-black/20 p-4">
+    <div className="text-[11px] uppercase tracking-[0.28em] text-[#9c9c9d]">Telegram</div>
+    <a
+      href="https://t.me/churakoveg"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="mt-2 text-sm text-white transition hover:text-[#ff6b81]"
+    >
+      @churakoveg
+    </a>
+  </div>
+</div>
             </div>
           </div>
         </div>
