@@ -474,20 +474,20 @@ export default function VideoProductionWebsite() {
             <p className="max-w-2xl text-base leading-7 text-[#b8b8b9] md:text-[1.05rem]">{t.heroText}</p>
 
             <div className="flex flex-wrap gap-4">
-              <a
-                href="#contact"
-                className="rounded-full bg-[#c31432] px-6 py-3 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#d91a3b]"
-              >
-                Связаться
-              </a>
-              <button
-                type="button"
-                onClick={() => setView("portfolio")}
-                className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-[#ededed] transition hover:border-white hover:bg-white hover:text-black"
-              >
-                Открыть портфолио
-              </button>
-            </div>
+  <a
+    href="#contact"
+    className="rounded-full bg-[#c31432] px-6 py-3 text-sm font-medium text-white transition hover:scale-[1.02] hover:bg-[#d91a3b]"
+  >
+    Связаться
+  </a>
+  <button
+    type="button"
+    onClick={() => setView("portfolio")}
+    className="rounded-full border border-white/15 px-6 py-3 text-sm font-medium text-[#ededed] transition hover:border-white hover:bg-white hover:text-black"
+  >
+    Открыть портфолио
+  </button>
+</div>
           </div>
 
           <div className="relative overflow-hidden rounded-[2rem] border border-white/10 bg-white/[0.03] shadow-2xl shadow-black/50">
