@@ -280,15 +280,26 @@ hero4: "КРИЧАТЬ",
         url: "https://youtu.be/",
       },
       {
-        title: "В эфире Soda Live: на что способен новый альбом",
-        meta: lang === "ru" ? "Тизер альбома, 2025" : "Album teaser, 2025",
+        title: "Веснушка — Обнимай",
+        meta: lang === "ru" ? "Клип" : "Music video",
         description:
           lang === "ru"
-            ? "Ироничная студийная форма с узнаваемым сет-дизайном и телевизионной интонацией внутри кадра."
-            : "An ironic studio-built form with recognizable set design and a TV-like tone inside the frame.",
+            ? "Музыкальное видео на песню «Обнимай»."
+            : "Music video for the track “Obnimay”.",
         image:
           "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753655898662-jocmlgyc4zi.jpg",
-        url: "https://youtu.be/",
+        url: "https://www.youtube.com/watch?v=dg9EAXsNC4A",
+      },
+      {
+        title: "На простор",
+        meta: lang === "ru" ? "Клип" : "Music video",
+        description:
+          lang === "ru"
+            ? "Музыкальное видео на песню «На простор»."
+            : "Music video for the track “Na Prostor”.",
+        image:
+          "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753655898662-jocmlgyc4zi.jpg",
+        url: "https://youtu.be/UmynU8e1gEc",
       },
     ],
     campaigns: [
