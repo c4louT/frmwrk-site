@@ -335,11 +335,11 @@ hero4: "КРИЧАТЬ",
   }
 
   const teamImages = [
-    "https://frmwrk.vercel.app/_next/image?q=75&url=https%3A%2F%2Fslelguoygbfzlpylpxfs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fdocument-uploads%2F1753570314645-23b8jnph56s.jpg&w=3840",
-    "https://frmwrk.vercel.app/_next/image?q=75&url=https%3A%2F%2Fslelguoygbfzlpylpxfs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fdocument-uploads%2F1753569894588-ye5jbylq09q.jpg&w=3840",
-    "https://frmwrk.vercel.app/_next/image?q=75&url=https%3A%2F%2Fslelguoygbfzlpylpxfs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fdocument-uploads%2F1753570327512-owfj9u2n69.jpg&w=3840",
-    "https://frmwrk.vercel.app/_next/image?q=75&url=https%3A%2F%2Fslelguoygbfzlpylpxfs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fdocument-uploads%2F1753832716860-srsz977csi.jpg&w=3840",
-    "https://frmwrk.vercel.app/_next/image?q=75&url=https%3A%2F%2Fslelguoygbfzlpylpxfs.supabase.co%2Fstorage%2Fv1%2Fobject%2Fpublic%2Fdocument-uploads%2F1753832718281-mkfoxflnsbj.jpg&w=3840",
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753570314645-23b8jnph56s.jpg",
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753569894588-ye5jbylq09q.jpg",
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753570327512-owfj9u2n69.jpg",
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753832716860-srsz977csi.jpg",
+    "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753832718281-mkfoxflnsbj.jpg",
   ]
 
   const team = t.teamNames.map((name, index) => ({ name, image: teamImages[index] }))
