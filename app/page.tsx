@@ -286,8 +286,7 @@ hero4: "КРИЧАТЬ",
           lang === "ru"
             ? "Музыкальное видео на песню «Обнимай»."
             : "Music video for the track “Obnimay”.",
-        image:
-          "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753655898662-jocmlgyc4zi.jpg",
+        image: "/media/obnimay-poster.jpg",
         url: "https://www.youtube.com/watch?v=dg9EAXsNC4A",
       },
       {
@@ -297,8 +296,7 @@ hero4: "КРИЧАТЬ",
           lang === "ru"
             ? "Музыкальное видео на песню «На простор»."
             : "Music video for the track “Na Prostor”.",
-        image:
-          "https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/document-uploads/1753655898662-jocmlgyc4zi.jpg",
+        image: "/media/na-prostor-poster.jpg",
         url: "https://youtu.be/UmynU8e1gEc",
       },
     ],
